@@ -1,0 +1,33 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Jacob Davis's Personal Website",
+  "main": "server/index.js",
+  "scripts": {
+    "client-dev": "npx webpack --watch",
+    "build": "npx webpack",
+    "start": "node server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JakeDavisCodes/Portfolio.git"
+  },
+  "author": "Jake",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JakeDavisCodes/Portfolio/issues"
+  },
+  "homepage": "https://github.com/JakeDavisCodes/Portfolio#readme",
+  "devDependencies": {
+    "webpack-cli": "^5.0.1"
+  },
+  "dependencies": {
+    "@babel/preset-react": "^7.18.6",
+    "babel-loader": "^9.1.2",
+    "express": "^4.18.2",
+    "morgan": "^1.10.0",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
