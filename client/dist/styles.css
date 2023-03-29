@@ -2,6 +2,16 @@ html {
   background-color: #ddd5ef;
 }
 
+
+#line {
+  position:absolute;
+  left: 30%;
+  top: 30%;
+  height: 200vh;
+  border: solid;
+  border-width: 3;
+  border-color: #f0a44b;
+}
 #header {
   position: sticky;
   width: 100vw;
