@@ -1,11 +1,15 @@
 import React, { useState, useEffect } from 'react';
 
-const random = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'l', 'k', 'j', 'h', 'g', 'f', 'd', 's', 'a', 'z', 'x', 'c', 'v', 'b', 'n', 'm', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '*', '&', '$', '$', '#', '@', '!', '?', 'Q', 'W', 'E', 'R', 'T', 'Y', 'U', 'I', 'O', 'P', 'A', 'S', 'D', 'F', 'G', 'H', 'J', 'K', 'L', 'Z', 'X', 'C', 'V', 'B', 'N', 'M', ' '];
+const random = ['q', 'w', 'e', 'r', 't', 'y', 'u', 'i', 'o', 'p', 'l', 'k', 'j', 'h', 'g', 'f', 'd', 's', 'a', 'z', 'x', 'c', 'v', 'b', 'n', 'm', '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '*', '&', '$', '$', '#', '@', '!', '?', ' '];
 
-const encode = (word) => {
+const encode = (word, previous = 'a') => {
   let encoded = '';
-  while (encoded.length !== word.length) {
-    encoded += random[Math.floor(Math.random() * random.length)];
+  for (let i = 0; i < word.length; i++) {
+    if (Math.random() * 100 < 50) {
+      encoded += random[Math.floor(Math.random() * random.length)];
+    } else {
+      encoded += previous[i];
+    }
   }
   return encoded;
 };
@@ -13,7 +17,9 @@ const partialDecode = (encoded, decoded) => {
   let result = '';
   for (let i = 0; i < decoded.length; i++) {
     if (decoded[i] === encoded[i]) result += decoded[i];
-    else result += random[Math.floor(Math.random() * random.length)];
+    else if (Math.random() * 100 < 50) {
+      result += random[Math.floor(Math.random() * random.length)];
+    } else result += encoded[i];
   }
   let index = 0;
   while (encoded[index] === decoded[index]) index += 1;
@@ -34,8 +40,7 @@ function HackerText({ textArray }) {
         .then(() => setTextAction('delete'));
     } else if (textAction === 'decode') {
       const timeout = setTimeout(() => {
-        const that = partialDecode(display, textArray[index]);
-        setDisplay(that);
+        setDisplay(partialDecode(display, textArray[index]));
       }, 80);
 
       return () => clearTimeout(timeout);
@@ -43,7 +48,7 @@ function HackerText({ textArray }) {
       setTextAction('decode');
     } else if (textAction === 'write') {
       const timeout = setTimeout(() => {
-        setDisplay(encode(textArray[index]).slice(0, display.length + 1));
+        setDisplay(encode(textArray[index], display).slice(0, display.length + 1));
       }, 80);
 
       return () => clearTimeout(timeout);
@@ -57,7 +62,7 @@ function HackerText({ textArray }) {
     } else {
       const timeout = setTimeout(() => {
         setDisplay(textArray[index].slice(0, display.length - 1));
-      }, 80);
+      }, 60);
 
       return () => clearTimeout(timeout);
     }
