@@ -1,0 +1,74 @@
+* {
+  transition: all ease 0.3s;
+}
+
+html {
+  background-color: #ddd5ef;
+}
+
+
+#line {
+  position:absolute;
+  left: 30%;
+  top: 30%;
+  height: 200vh;
+  border: solid;
+  border-width: 3;
+  border-color: #f0a44b;
+}
+
+/* Header CSS */
+#header {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  width: 100vw;
+  height: 7vh;
+  background-color: gray;
+}
+.name {
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+.name p {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 5px;
+}
+.name p.bold {
+  font-size: 40px;
+  font-weight: bold;
+  color: #f0a44b;
+}
+.moon-icon, .sun-icon {
+  padding: 20px;
+}
+.moon-icon {
+  color: #031c38;
+  float: right;
+}
+.moon-icon:hover {
+  color: #5c6d83;
+}
+.sun-icon {
+  color: #ddd5ef;
+  float: right;
+}
+.sun-icon:hover {
+  color: #ffffff;
+}
+
+.page_section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+
+
+.big_text { font-size: xx-large; }
