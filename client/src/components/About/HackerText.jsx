@@ -24,19 +24,19 @@ const sleep = (ms) => new Promise((resolve) => { setTimeout(resolve, ms); });
 
 function HackerText({ textArray }) {
   const [display, setDisplay] = useState('');
-  const [index, setIndex] = useState(4);
+  const [index, setIndex] = useState(0);
   const [textAction, setTextAction] = useState('write');
 
   // eslint-disable-next-line consistent-return
   useEffect(() => {
     if (textAction === 'decode' && display === textArray[index]) {
-      sleep(4000)
+      sleep(3000)
         .then(() => setTextAction('delete'));
     } else if (textAction === 'decode') {
       const timeout = setTimeout(() => {
         const that = partialDecode(display, textArray[index]);
         setDisplay(that);
-      }, 100);
+      }, 80);
 
       return () => clearTimeout(timeout);
     } else if (textAction === 'write' && display.length === textArray[index].length) {
@@ -44,11 +44,11 @@ function HackerText({ textArray }) {
     } else if (textAction === 'write') {
       const timeout = setTimeout(() => {
         setDisplay(encode(textArray[index]).slice(0, display.length + 1));
-      }, 100);
+      }, 80);
 
       return () => clearTimeout(timeout);
     } else if (textAction === 'delete' && display.length === 0) {
-      sleep(500)
+      sleep(300)
         .then(() => {
           if (index + 1 === textArray.length) setIndex(0);
           else setIndex(index + 1);
@@ -57,16 +57,21 @@ function HackerText({ textArray }) {
     } else {
       const timeout = setTimeout(() => {
         setDisplay(textArray[index].slice(0, display.length - 1));
-      }, 100);
+      }, 80);
 
       return () => clearTimeout(timeout);
     }
   }, [display, textAction]);
 
   return (
-    <p className="hacker-text">
-      {display}
-    </p>
+    <div className="inherit">
+      <p>
+        {'And I\'m a'}
+      </p>
+      <p className="hacker-text">
+        {display}
+      </p>
+    </div>
   );
 }
 

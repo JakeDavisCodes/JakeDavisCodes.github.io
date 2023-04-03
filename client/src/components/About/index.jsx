@@ -5,14 +5,17 @@ import HackerText from './HackerText.jsx';
 const textArray = [
   'Full-Stack Developer',
   'Front-End Engineer',
-  'Back-End Specialist',
+  'Back-End Developer',
   'Software Developer',
   'Fast Learner',
+  'Team Player',
 ];
 
 function About() {
   return (
     <div className="page_section big_text" id="about">
+      <p>Hello,</p>
+      <p>My name is Jake</p>
       <HackerText textArray={textArray} />
     </div>
   );
