@@ -30,6 +30,7 @@ html {
   width: 100vw;
   height: 7vh;
   background-color: gray;
+  justify-content: space-between;
 }
 .name {
   margin-left: 30px;
@@ -47,8 +48,10 @@ html {
   color: #f0a44b;
 }
 .moon-icon, .sun-icon {
+  font-size: 4vh;
   padding: 20px;
-  float: right;
+  right: 2%;
+  position: relative;
 }
 .moon-icon {
   color: #031c38;
