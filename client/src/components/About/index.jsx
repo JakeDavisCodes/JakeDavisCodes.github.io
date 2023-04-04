@@ -1,19 +1,22 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import HackerText from './HackerText.jsx';
 
 const textArray = [
   'Full-Stack Developer',
   'Front-End Engineer',
-  'Back-End Specialist',
-  'Software Developer',
+  'Back-End Developer',
+  'Software Engineer',
   'Fast Learner',
+  'Team Player',
 ];
 
-function About() {
+function About({ theme }) {
   return (
     <div className="page_section big_text" id="about">
-      <HackerText textArray={textArray} />
+      <p>Hello,</p>
+      <p>My name is Jake</p>
+      <HackerText theme={theme} textArray={textArray} />
     </div>
   );
 }
