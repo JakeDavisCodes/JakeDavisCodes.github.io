@@ -2,11 +2,13 @@ import React from 'react';
 
 function Header({ theme, setTheme }) {
   const handleClick = () => {
-    setTheme(theme === 'light' ? 'dark' : 'light');
+    const newTheme = theme === 'light' ? 'dark' : 'light';
+    setTheme(newTheme);
+    document.getElementsByTagName('html')[0].setAttribute('class', newTheme);
   };
 
   return (
-    <div id="header">
+    <div id="header" className={theme}>
       <div className={`${theme} name`}>
         <p>Jacob</p>
         <p className="bold">ROYAL</p>

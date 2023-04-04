@@ -28,7 +28,7 @@ const partialDecode = (encoded, decoded) => {
 };
 const sleep = (ms) => new Promise((resolve) => { setTimeout(resolve, ms); });
 
-function HackerText({ textArray }) {
+function HackerText({ textArray, theme }) {
   const [display, setDisplay] = useState('');
   const [index, setIndex] = useState(0);
   const [textAction, setTextAction] = useState('write');
@@ -73,7 +73,7 @@ function HackerText({ textArray }) {
       <p>
         {'And I\'m a'}
       </p>
-      <p className="hacker-text">
+      <p className={`hacker-text ${theme}`}>
         {display}
       </p>
     </div>

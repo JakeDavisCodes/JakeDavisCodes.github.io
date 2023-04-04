@@ -11,12 +11,12 @@ const textArray = [
   'Team Player',
 ];
 
-function About() {
+function About({ theme }) {
   return (
     <div className="page_section big_text" id="about">
       <p>Hello,</p>
       <p>My name is Jake</p>
-      <HackerText textArray={textArray} />
+      <HackerText theme={theme} textArray={textArray} />
     </div>
   );
 }
