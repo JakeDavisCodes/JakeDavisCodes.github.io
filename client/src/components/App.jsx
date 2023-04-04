@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import Header from './Header/index.jsx';
 import About from './About/index.jsx';
