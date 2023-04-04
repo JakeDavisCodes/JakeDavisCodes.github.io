@@ -1,12 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 function Header({ theme, setTheme }) {
   const handleClick = () => {
-    if (theme === 'light') {
-      setTheme('dark');
-    } else {
-      setTheme('light');
-    }
+    setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
   return (
@@ -19,9 +15,7 @@ function Header({ theme, setTheme }) {
       <div id="sections-buttons">
         placeholder
       </div>
-      {theme === 'light'
-        ? <i className="moon-icon fa-2xl fa-solid fa-moon" onClick={handleClick} />
-        : <i className="sun-icon fa-2xl fa-solid fa-sun" onClick={handleClick} />}
+      <i className={`${theme === 'light' ? 'moon-icon' : 'sun-icon'} fa-2xl fa-solid ${theme === 'light' ? 'fa-moon' : 'fa-sun'}`} onClick={handleClick} />
     </div>
   );
 }

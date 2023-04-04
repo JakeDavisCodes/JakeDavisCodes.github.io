@@ -1,8 +1,11 @@
 * {
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: bold;
   transition: all ease 0.3s;
 }
 
 html {
+  overflow-x:hidden;
   z-index: -2;
   background-color: #ddd5ef;
 }
@@ -23,7 +26,7 @@ html {
 #header {
   display: flex;
   align-items: center;
-  position: sticky;
+  position: relative;
   width: 100vw;
   height: 7vh;
   background-color: gray;
@@ -45,17 +48,16 @@ html {
 }
 .moon-icon, .sun-icon {
   padding: 20px;
+  float: right;
 }
 .moon-icon {
   color: #031c38;
-  float: right;
 }
 .moon-icon:hover {
   color: #5c6d83;
 }
 .sun-icon {
   color: #ddd5ef;
-  float: right;
 }
 .sun-icon:hover {
   color: #ffffff;

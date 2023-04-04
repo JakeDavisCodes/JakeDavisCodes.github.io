@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 import HackerText from './HackerText.jsx';
 
@@ -6,7 +6,7 @@ const textArray = [
   'Full-Stack Developer',
   'Front-End Engineer',
   'Back-End Developer',
-  'Software Developer',
+  'Software Engineer',
   'Fast Learner',
   'Team Player',
 ];
