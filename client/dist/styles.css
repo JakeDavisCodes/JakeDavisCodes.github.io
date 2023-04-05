@@ -3,10 +3,20 @@
   font-weight: bold;
   transition: all 0.3s ease-out;
 }
-
 html {
   overflow-x:hidden;
+}
+#bg {
+  position: fixed;
+  width: 222.22%;
+  height: 1000%;
   z-index: -2;
+
+  background: rgb(221,213,239);
+  background: -moz-linear-gradient(90deg, rgba(221,213,239,1) 0%, rgba(255,255,255,1) 22%, rgba(221,213,239,1) 45%, rgba(68,64,158,1) 55%, rgba(5,4,47,1) 77%, rgba(68,64,158,1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(221,213,239,1) 0%, rgba(255,255,255,1) 22%, rgba(221,213,239,1) 45%, rgba(68,64,158,1) 55%, rgba(5,4,47,1) 77%, rgba(68,64,158,1) 100%);
+  background: linear-gradient(90deg, rgba(221,213,239,1) 0%, rgba(255,255,255,1) 22%, rgba(221,213,239,1) 45%, rgba(68,64,158,1) 55%, rgba(5,4,47,1) 77%, rgba(68,64,158,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ddd5ef",endColorstr="#44409e",GradientType=1);
 }
 
 
@@ -23,9 +33,10 @@ html {
 
 /* Header CSS */
 #header {
+  left: 0;
   display: flex;
   align-items: center;
-  position: relative;
+  position: fixed;
   width: 100vw;
   height: 7vh;
   justify-content: space-between;
@@ -33,6 +44,9 @@ html {
   -webkit-box-shadow: 0px 11px 17px 6px rgba(0,0,0,0.55);
   -moz-box-shadow: 0px 11px 17px 6px rgba(0,0,0,0.55);
   box-shadow: 0px 11px 17px 6px rgba(0,0,0,0.55);
+}
+#header #bg {
+  height: 7vh
 }
 .name {
   margin-left: 30px;
