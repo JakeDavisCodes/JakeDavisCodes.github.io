@@ -6,10 +6,11 @@ import Projects from './Projects/index.jsx';
 import More from './More/index.jsx';
 
 function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState('dark');
 
   return (
     <div id="app">
+      <div id="bg" className={theme} />
       <div id="line" />
       <Header theme={theme} setTheme={setTheme} />
       <About theme={theme} />

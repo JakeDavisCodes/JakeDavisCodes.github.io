@@ -1,19 +1,17 @@
-html.dark {
-  background: rgb(91,67,166);
-  background: linear-gradient(146deg, rgba(91,67,166,1) 0%, rgba(0,0,0,1) 49%, rgba(91,67,166,1) 100%);
+#bg {
+  transition: all 0.5s ease;
 }
-html.light {
-  background: rgb(221,213,239);
-  background: linear-gradient(146deg, rgba(221,213,239,1) 24%, rgba(255,255,255,1) 49%, rgba(221,213,239,1) 78%);
+#bg.dark {
+  transform:translateX(-55%);
 }
+
 *.dark {
   color: rgb(221,213,239);
 }
 
 
 /* Header */
-#header.light { background-color: rgb(221,213,239); }
-#header.dark { background-color: #5B43A6; }
+
 
 
 /* About */
