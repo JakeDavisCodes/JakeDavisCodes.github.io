@@ -107,5 +107,11 @@ html {
   color: #5B43A6
 }
 
-.inherit {display: inherit;}
+.section_text {
+  position: absolute;
+  left: -5%;
+  top: 32%;
+}
+.tiny_text { font-size: 2vh; }
+.inherit { display: inherit; }
 .big_text { font-size: 5vh; }
