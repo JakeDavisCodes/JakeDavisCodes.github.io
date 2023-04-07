@@ -16,7 +16,9 @@ function Header({ theme, setTheme }) {
         <p>Davis</p>
       </div>
       <div id="sections-buttons">
-        placeholder
+        <div className="fix-border section-button">About</div>
+        <div className="section-button">Projects</div>
+        <div className="section-button">More</div>
       </div>
       <i className={`${theme === 'light' ? 'moon-icon' : 'sun-icon'} fa-2xl fa-solid ${theme === 'light' ? 'fa-moon' : 'fa-sun'}`} onClick={handleClick} />
     </div>
