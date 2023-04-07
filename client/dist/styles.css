@@ -108,9 +108,12 @@ html {
 }
 
 .section_text {
+  width: 23%;
+  color: gray;
   position: absolute;
-  left: -5%;
+  left: -33%;
   top: 32%;
+  text-align: right;
 }
 .tiny_text { font-size: 2vh; }
 .inherit { display: inherit; }

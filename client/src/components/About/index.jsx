@@ -17,7 +17,9 @@ function About({ theme }) {
       <p>Hello,</p>
       <p>My name is Jake</p>
       <HackerText theme={theme} textArray={textArray} />
-      <p className="tiny_text section_text">About me</p>
+      <div className={`tiny_text section_text ${theme}`}>
+        About
+      </div>
     </div>
   );
 }

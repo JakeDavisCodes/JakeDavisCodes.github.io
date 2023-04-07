@@ -1,14 +1,7 @@
-#bg {
-  transition: all 0.5s ease;
-}
-#bg.dark {
-  transform:translateX(-55%);
-}
-
-*.dark {
-  color: rgb(221,213,239);
-}
-
+#bg { transition: all 0.5s ease; }
+#bg.dark { transform:translateX(-55%); }
+*.dark { color: rgb(221,213,239); }
+.section_text.dark { color: lightgray; }
 
 /* Header */
 
