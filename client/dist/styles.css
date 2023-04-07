@@ -3,6 +3,9 @@
   font-weight: bold;
   transition: all 0.5s ease-out;
 }
+body::-webkit-scrollbar{
+  display: none;
+}
 html {
   overflow-x:hidden;
 }
@@ -18,8 +21,14 @@ html {
   background: linear-gradient(90deg, rgba(221,213,239,1) 0%, rgba(255,255,255,1) 22%, rgba(221,213,239,1) 45%, rgba(68,64,158,1) 55%, rgba(5,4,47,1) 77%, rgba(68,64,158,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ddd5ef",endColorstr="#44409e",GradientType=1);
 }
-
-
+.page_section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 #line {
   z-index: -1;
   position:absolute;
@@ -45,9 +54,24 @@ html {
   -moz-box-shadow: 0px 11px 17px 6px rgba(0,0,0,0.55);
   box-shadow: 0px 11px 17px 6px rgba(0,0,0,0.55);
 }
-#header #bg {
-  height: 7vh
+#header #bg {height: 7vh}
+#sections-buttons {
+  display: flex;
+  width: 50vw;
+  height: 80%;
 }
+.section-button {
+  transition: all ease 0.3s;
+  border-right: solid 3px gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 33.33%;
+  font-size: 3.5vh;
+}
+.section-button:hover { z-index: 100; font-size: 4vh; }
+.section-button.fix-border { border-left: solid 3px gray; }
 .name {
   margin-left: 30px;
   display: flex;
@@ -67,32 +91,14 @@ html {
   width: 1vh;
   height: 1vh;
   font-size: 4vh;
-  padding: 20px;
   right: 3%;
-  top: 1%;
+  margin: auto 0;
   position: relative;
 }
-.moon-icon {
-  color: #031c38;
-}
-.moon-icon:hover {
-  color: #5c6d83;
-}
-.sun-icon {
-  color: #ddd5ef;
-}
-.sun-icon:hover {
-  color: #ffffff;
-}
-
-.page_section {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
+.moon-icon { color: #031c38; }
+.moon-icon:hover {color: #5c6d83; font-size: 4.2vh;}
+.sun-icon {color: #ddd5ef;}
+.sun-icon:hover {color: #ffffff; font-size: 4.2vh;}
 
 /* ABOUT */
 #about {
@@ -106,6 +112,22 @@ html {
   margin-left: 1.2vh;
   color: #5B43A6
 }
+#about .lead {
+  top: 60%;
+  left: -2%
+}
 
-.inherit {display: inherit;}
+/* PRJOECTS */
+#projects .section_text {top:110%;  left: 5.5%}
+
+.section_text {
+  width: 23%;
+  color: gray;
+  position: absolute;
+  left: -33%;
+  top: 32%;
+  text-align: right;
+}
+.tiny_text { font-size: 2vh; }
+.inherit { display: inherit; }
 .big_text { font-size: 5vh; }
