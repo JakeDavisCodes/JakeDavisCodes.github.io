@@ -7,6 +7,24 @@ function Header({ theme, setTheme }) {
     document.getElementsByTagName('html')[0].setAttribute('class', newTheme);
   };
 
+  const scrollTo = {
+    about: () => {
+      const e = document.getElementById('about');
+      const y = e.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    },
+    projects: () => {
+      const e = document.getElementById('projects');
+      const y = e.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    },
+    more: () => {
+      const e = document.getElementById('more');
+      const y = e.getBoundingClientRect().top + window.pageYOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    },
+  };
+
   return (
     <div id="header" className={theme}>
       <div id="bg" className={theme} />
@@ -16,9 +34,9 @@ function Header({ theme, setTheme }) {
         <p>Davis</p>
       </div>
       <div id="sections-buttons">
-        <div className="fix-border section-button">About</div>
-        <div className="section-button">Projects</div>
-        <div className="section-button">More</div>
+        <div onClick={scrollTo.about} className={`${theme} fix-border section-button`}>About</div>
+        <div onClick={scrollTo.projects} className={`${theme} section-button`}>Projects</div>
+        <div onClick={scrollTo.more} className={`${theme} section-button`}>More</div>
       </div>
       <i className={`${theme === 'light' ? 'moon-icon' : 'sun-icon'} fa-2xl fa-solid ${theme === 'light' ? 'fa-moon' : 'fa-sun'}`} onClick={handleClick} />
     </div>

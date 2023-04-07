@@ -61,6 +61,7 @@ html {
   height: 80%;
 }
 .section-button {
+  transition: all ease 0.3s;
   border-right: solid 3px gray;
   display: flex;
   justify-content: center;
@@ -69,6 +70,7 @@ html {
   width: 33.33%;
   font-size: 3.5vh;
 }
+.section-button:hover { z-index: 100; font-size: 4vh; }
 .section-button.fix-border { border-left: solid 3px gray; }
 .name {
   margin-left: 30px;
@@ -94,9 +96,9 @@ html {
   position: relative;
 }
 .moon-icon { color: #031c38; }
-.moon-icon:hover {color: #5c6d83;}
+.moon-icon:hover {color: #5c6d83; font-size: 4.2vh;}
 .sun-icon {color: #ddd5ef;}
-.sun-icon:hover {color: #ffffff;}
+.sun-icon:hover {color: #ffffff; font-size: 4.2vh;}
 
 /* ABOUT */
 #about {
