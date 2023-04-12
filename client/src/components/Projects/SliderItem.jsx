@@ -1,8 +1,10 @@
 import React from 'react';
 
-function SliderItem({ theme, item, focused }) {
+function SliderItem({
+  select, theme, item, focused,
+}) {
   return (
-    <div className={`${theme} ${focused ? 'focused' : ''} slider-item`}>
+    <div onClick={select} className={`${theme} ${focused ? 'focused' : ''} slider-item`}>
       {item.name}
     </div>
   );

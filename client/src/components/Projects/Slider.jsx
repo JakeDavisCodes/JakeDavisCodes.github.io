@@ -6,7 +6,14 @@ function Slider({ theme, data }) {
 
   return (
     <div className={`${theme} slider`}>
-      {data.map((item, idx) => <Item theme={theme} item={item} focused={idx === index} />)}
+      {data.map((item, idx) => (
+        <Item
+          select={() => setIndex(idx)}
+          theme={theme}
+          item={item}
+          focused={idx === index}
+        />
+      ))}
     </div>
   );
 }
