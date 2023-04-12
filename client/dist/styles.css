@@ -119,6 +119,14 @@ html {
 
 /* PRJOECTS */
 #projects .section_text {top:110%;  left: 5.5%}
+.slider {
+  display: flex;
+}
+.slider-item {
+  border: solid white 5px;
+  width: 20vw;
+  aspect-ratio: 4/5;
+}
 
 .section_text {
   width: 23%;
