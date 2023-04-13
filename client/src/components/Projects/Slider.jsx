@@ -8,10 +8,11 @@ function Slider({ theme, data }) {
     <div className={`${theme} slider`}>
       {data.map((item, idx) => (
         <Item
-          select={() => setIndex(idx)}
+          select={() => { console.log(index === idx); setIndex(idx); }}
           theme={theme}
           item={item}
           focused={idx === index}
+          transform={(index * 110) - 40}
         />
       ))}
     </div>
