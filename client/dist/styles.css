@@ -119,6 +119,20 @@ html {
 
 /* PRJOECTS */
 #projects .section_text {top:110%;  left: 5.5%}
+.slider {
+  width: 80vw;
+  white-space: nowrap;
+}
+.slider-item {
+  display: block;
+  transition: all 0.4s ease;
+  border: solid white 5px;
+  width: 30vw;
+  aspect-ratio: 5/3;
+  margin: 1.5vw;
+  display: inline-block;
+}
+.slider-item.focused { border: red solid 5px; z-index: 100; }
 
 .section_text {
   width: 23%;
