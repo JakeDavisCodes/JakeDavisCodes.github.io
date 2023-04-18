@@ -18,9 +18,6 @@ function SliderItem({
         src={`images/${item.wideImgSrc}.png`}
         alt={item.name}
       />
-      <p className="project-details">
-        More about this project?
-      </p>
     </div>
   );
 }
