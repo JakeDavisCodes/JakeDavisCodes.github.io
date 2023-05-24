@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Item from './SliderItem.jsx';
-import Modal from './Modal.jsx';
 
 function Slider({ theme, data, setProject }) {
   const [index, setIndex] = useState(0);

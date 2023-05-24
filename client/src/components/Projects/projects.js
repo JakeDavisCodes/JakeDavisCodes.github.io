@@ -3,7 +3,7 @@ export default [
     name: 'Swapesy',
     role: 'Architecture Owner',
     wideImgSrc: 'swapesyWide',
-    tallImgSrc: 'swapesyTall',
+    tallImgSrc: 'swapesyWide',
     about: 'Mobile marketplace to buy, auction, trade, and sell cards!',
     techStack: 'ReactNative, FireBase, FireStore',
     details: `As the architecture owner, I made many of the final
@@ -17,7 +17,7 @@ export default [
     name: 'Swapesy',
     role: 'Architecture Owner',
     wideImgSrc: 'swapesyWide',
-    tallImgSrc: 'swapesyTall',
+    tallImgSrc: 'swapesyWide',
     about: 'Mobile marketplace to buy, auction, trade, and sell cards!',
     techStack: 'ReactNative, FireBase, FireStore',
     details: `As the architecture owner, I made many of the final
@@ -31,7 +31,7 @@ export default [
     name: 'Swapesy',
     role: 'Architecture Owner',
     wideImgSrc: 'swapesyWide',
-    tallImgSrc: 'swapesyTall',
+    tallImgSrc: 'swapesyWide',
     about: 'Mobile marketplace to buy, auction, trade, and sell cards!',
     techStack: 'ReactNative, FireBase, FireStore',
     details: `As the architecture owner, I made many of the final
@@ -45,7 +45,7 @@ export default [
     name: 'Swapesy',
     role: 'Architecture Owner',
     wideImgSrc: 'swapesyWide',
-    tallImgSrc: 'swapesyTall',
+    tallImgSrc: 'swapesyWide',
     about: 'Mobile marketplace to buy, auction, trade, and sell cards!',
     techStack: 'ReactNative, FireBase, FireStore',
     details: `As the architecture owner, I made many of the final
@@ -59,7 +59,7 @@ export default [
     name: 'Swapesy',
     role: 'Architecture Owner',
     wideImgSrc: 'swapesyWide',
-    tallImgSrc: 'swapesyTall',
+    tallImgSrc: 'swapesyWide',
     about: 'Mobile marketplace to buy, auction, trade, and sell cards!',
     techStack: 'ReactNative, FireBase, FireStore',
     details: `As the architecture owner, I made many of the final
@@ -73,7 +73,7 @@ export default [
     name: 'Swapesy',
     role: 'Architecture Owner',
     wideImgSrc: 'swapesyWide',
-    tallImgSrc: 'swapesyTall',
+    tallImgSrc: 'swapesyWide',
     about: 'Mobile marketplace to buy, auction, trade, and sell cards!',
     techStack: 'ReactNative, FireBase, FireStore',
     details: `As the architecture owner, I made many of the final

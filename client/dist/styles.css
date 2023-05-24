@@ -65,7 +65,7 @@ html.lock {
 }
 .section-button {
   transition: all ease 0.3s;
-  border-right: solid 3px gray;
+  border-right: solid .15vw gray;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,7 +74,7 @@ html.lock {
   font-size: 3.5vh;
 }
 .section-button:hover { z-index: 100; font-size: 4vh; }
-.section-button.fix-border { border-left: solid 3px gray; }
+.section-button.fix-border { border-left: solid .15vw gray; }
 .name {
   margin-left: 30px;
   display: flex;
@@ -91,8 +91,6 @@ html.lock {
   color: #f0a44b;
 }
 .moon-icon, .sun-icon {
-  width: 1vh;
-  height: 1vh;
   font-size: 4vh;
   right: 3%;
   margin: auto 0;
@@ -112,7 +110,7 @@ html.lock {
   align-content: flex-start;
 }
 .hacker-text {
-  margin-left: 1.2vh;
+  margin-left: 2.8vh;
   color: #5B43A6
 }
 #about .lead {
@@ -171,11 +169,53 @@ html.lock {
   z-index: 2;
 }
 .project-modal .main {
+  display: flex;
   position: absolute;
   background-color: white;
   width:60%;
   height:80%;
   z-index: 3;
+}
+.tall-img {
+  height: 100%;
+  width: 35%;
+  position: relative;
+  object-fit: cover;
+}
+.project-modal .text { width: 65%; }
+.project-modal .top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* -webkit-box-shadow: 0px 11px 17px 6px rgba(0,0,0,0.55);
+  -moz-box-shadow: 0px 11px 17px 6px rgba(0,0,0,0.55); */
+  box-shadow: -1px 11px 17px 1px rgba(0,0,0,0.35);
+}
+.project-modal .title {
+  font-size: 7vh;
+  text-align: center;
+  margin: 0.5vw 0.8vw 0.5vw 0.5vw;
+  color: black;
+}
+.project-modal .text .role {
+  font-size: 2.5vh;
+  color: darkgrey;
+}
+.project-modal .text .summary {
+  font-size: 1.6vw;
+  margin: 1vw;
+  color: gray;
+}
+.project-modal .text .stack {
+  font-size: 1.4vw;
+  margin: 0.5vw 1.5vw 1vw 2vw;
+  color: gray;
+}
+.project-modal .text .details {
+  font-size: 1.4vw;
+  margin: 1vw;
+  color: gray
 }
 
 .section_text {
