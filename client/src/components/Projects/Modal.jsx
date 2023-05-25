@@ -28,6 +28,7 @@ function Modal({ theme, project, setProject }) {
             </p>
           </div>
           <p className="summary">{project.about}</p>
+          <p className="tech">Technology Used</p>
           <p className="stack">{project.techStack}</p>
           <p className="details">{project.details}</p>
         </div>
