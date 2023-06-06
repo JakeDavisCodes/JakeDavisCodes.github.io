@@ -28,10 +28,15 @@ function SliderItem({
         style={{
           opacity: `${details ? 1 : 0}`,
           transform: `${details ? 'translateY(0%)' : 'translateY(100%)'}`,
-          transition: 'all 0.4s ease',
+          transition: 'all 0.7s ease',
         }}
       >
-        fill
+        <div className="upper">
+          <p className="title">{item.name}</p>
+          <p className="role">{item.role}</p>
+        </div>
+        <p className="summary">{item.about}</p>
+        <p className="tech">{item.techStack}</p>
       </div>
       <img
         onClick={select}
