@@ -27,8 +27,16 @@ export default [
     name: 'Natural Sim',
     role: 'Lead Engineer',
     wideImgSrc: 'natsimWide',
-    about: 'Natural Selection simulator, modeling creature evolution. ',
+    about: 'Natural Selection simulator, modeling creature evolution.',
     techStack: 'TypeScript, React, Node.JS, Express, MongoDB, Sha256, AWS EC2',
     git: 'https://github.com/JakeDavisCodes/NaturalSelectionSim',
+  },
+  {
+    name: 'Portfolio',
+    role: 'Lead Engineer',
+    wideImgSrc: 'portfolioWide',
+    about: 'Personal portfolio and webiste to showcase personal skills and projects',
+    techStack: 'JavaScript, React, CSS3, HTML5, Node.JS',
+    git: 'https://github.com/JakeDavisCodes/Portfolio',
   },
 ];
