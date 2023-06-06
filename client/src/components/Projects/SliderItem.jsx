@@ -37,6 +37,7 @@ function SliderItem({
         </div>
         <p className="summary">{item.about}</p>
         <p className="tech">{item.techStack}</p>
+        <i className="gitIcon fa-brands fa-xl fa-github" onClick={() => window.open(item.git)} />
       </div>
       <img
         onClick={select}

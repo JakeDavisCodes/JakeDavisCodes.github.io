@@ -176,6 +176,8 @@ p { white-space: normal; }
 .p-details .role {font-size: 2.5vh; bottom: 20%; color: gray}
 .p-details .summary {color: gray; width: 90%; text-align: center; border-bottom:solid lightgray 2px; font-size: 3vh; padding: 1.5vw 0vw 0.95vw 0vw}
 .p-details .tech {color: gray; margin: 1vw 4vw 0 4vw; text-align: center; font-size: 2.8vh}
+.gitIcon {font-size: 4vh;position:fixed; bottom: 1.5vw; color: black; transition: all ease 0.5s;}
+.gitIcon:hover {color: gray}
 
 .section_text {
   width: 23%;
