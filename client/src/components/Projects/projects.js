@@ -3,79 +3,32 @@ export default [
     name: 'Swapesy',
     role: 'Architecture Owner',
     wideImgSrc: 'swapesyWide',
-    tallImgSrc: 'swapesyWide',
-    about: 'Mobile marketplace to buy, auction, trade, and sell cards!',
-    techStack: 'ReactNative, FireBase, FireStore',
-    details: 'As the architecture owner, I made many of the final decisions as to how data was stored, our tech stack, etc.\n\nAlong with my responsibilities as architecture owner, I also built out two pages and the links between them. Whilst Working on these pages, I created reusable components, shared with other developers and pages.',
+    about: 'Mobile marketplace to buy, auction, trade, and sell cards.',
+    techStack: 'JavaScript, ReactNative, FireBase, FireStore',
+    git: 'http://github.com/stunningstunfisk/swapesy',
   },
   {
-    name: 'Swapesy',
-    role: 'Architecture Owner',
-    wideImgSrc: 'swapesyWide',
-    tallImgSrc: 'swapesyWide',
-    about: 'Mobile marketplace to buy, auction, trade, and sell cards!',
-    techStack: 'ReactNative, FireBase, FireStore',
-    details: `As the architecture owner, I made many of the final
-              decisions as to how data was stored, our tech stack, etc.\n\n
-              Along with my responsibilities as architecture owner, I also
-              built out two pages and the links between them. Whilst
-              Working on these pages, I created reusable components,
-              shared with other developers and pages.`,
+    name: 'Atelier',
+    role: 'Front-End Engineer',
+    wideImgSrc: 'bnlWide',
+    about: 'A navigable e-commerce website selling clothing items.',
+    techStack: 'JavaScript, Node.JS, React, Jest, Express, AWS EC2',
+    git: 'http://github.com/FEC6-Wall-E/FEC',
   },
   {
-    name: 'Swapesy',
-    role: 'Architecture Owner',
-    wideImgSrc: 'swapesyWide',
-    tallImgSrc: 'swapesyWide',
-    about: 'Mobile marketplace to buy, auction, trade, and sell cards!',
-    techStack: 'ReactNative, FireBase, FireStore',
-    details: `As the architecture owner, I made many of the final
-              decisions as to how data was stored, our tech stack, etc.\n\n
-              Along with my responsibilities as architecture owner, I also
-              built out two pages and the links between them. Whilst
-              Working on these pages, I created reusable components,
-              shared with other developers and pages.`,
+    name: 'Atelier',
+    role: 'Back-End Engineer',
+    wideImgSrc: 'qnaWide',
+    about: 'QnA API service to serve a web-scale e-commerce website.',
+    techStack: 'JavaScript, Node.JS, Express, PostgreSQL, NGINX, AWS EC2, K6, Loader.IO',
+    git: 'https://github.com/SDC-6-DCJ/QnA-Service',
   },
   {
-    name: 'Swapesy',
-    role: 'Architecture Owner',
-    wideImgSrc: 'swapesyWide',
-    tallImgSrc: 'swapesyWide',
-    about: 'Mobile marketplace to buy, auction, trade, and sell cards!',
-    techStack: 'ReactNative, FireBase, FireStore',
-    details: `As the architecture owner, I made many of the final
-              decisions as to how data was stored, our tech stack, etc.\n\n
-              Along with my responsibilities as architecture owner, I also
-              built out two pages and the links between them. Whilst
-              Working on these pages, I created reusable components,
-              shared with other developers and pages.`,
-  },
-  {
-    name: 'Swapesy',
-    role: 'Architecture Owner',
-    wideImgSrc: 'swapesyWide',
-    tallImgSrc: 'swapesyWide',
-    about: 'Mobile marketplace to buy, auction, trade, and sell cards!',
-    techStack: 'ReactNative, FireBase, FireStore',
-    details: `As the architecture owner, I made many of the final
-              decisions as to how data was stored, our tech stack, etc.\n\n
-              Along with my responsibilities as architecture owner, I also
-              built out two pages and the links between them. Whilst
-              Working on these pages, I created reusable components,
-              shared with other developers and pages.`,
-  },
-  {
-    name: 'Swapesy',
-    role: 'Architecture Owner',
-    wideImgSrc: 'swapesyWide',
-    tallImgSrc: 'swapesyWide',
-    about: 'Mobile marketplace to buy, auction, trade, and sell cards!',
-    techStack: 'ReactNative, FireBase, FireStore',
-    details: `As the architecture owner, I made many of the final
-              decisions as to how data was stored, our tech stack, etc.\n\n
-              Along with my responsibilities as architecture owner, I also
-              built out two pages and the links between them. Whilst
-              Working on these pages, I created reusable components,
-              shared with other developers and pages.`,
+    name: 'Natural Sim',
+    role: 'Lead Engineer',
+    wideImgSrc: 'natsimWide',
+    about: 'Natural Selection simulator, modeling creature evolution. ',
+    techStack: 'TypeScript, React, Node.JS, Express, MongoDB, Sha256, AWS EC2',
+    git: 'https://github.com/JakeDavisCodes/NaturalSelectionSim',
   },
 ];
