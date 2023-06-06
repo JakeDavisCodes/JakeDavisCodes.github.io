@@ -1,19 +1,18 @@
 import React, { useState } from 'react';
 import Item from './SliderItem.jsx';
 
-function Slider({ theme, data, setProject }) {
+function Slider({ theme, data }) {
   const [index, setIndex] = useState(0);
 
-  const select = (item, idx) => {
-    if (idx === index) setProject(item);
-    else setIndex(idx);
+  const select = (idx) => {
+    setIndex(idx);
   };
 
   return (
     <div className={`${theme} slider`}>
       {data.map((item, idx) => (
         <Item
-          select={() => select(item, idx)}
+          select={() => select(idx)}
           theme={theme}
           item={item}
           focused={idx === index}
