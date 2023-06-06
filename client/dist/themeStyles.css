@@ -8,3 +8,9 @@
 
 /* About */
 .hacker-text.dark {color: #f0a44b;}
+
+ /* Projects  */
+.p-details.dark { background-color:rgb(23,19,75); }
+.p-details.dark .role {color:lightgray}
+.p-details.dark .gitIcon {color:lightgray}
+.p-details.dark .gitIcon:hover {color:white}
