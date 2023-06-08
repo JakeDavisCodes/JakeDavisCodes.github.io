@@ -181,9 +181,11 @@ p { white-space: normal; }
 
 /* More */
 #more button {
+  position: relative;
+
   width: 30%;
   height: 8%;
-  top: 0%;
+  top: -23%;
 }
 
 .section_text {
