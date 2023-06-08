@@ -179,6 +179,13 @@ p { white-space: normal; }
 .gitIcon {font-size: 4vh;position:fixed; bottom: 1.5vw; color: black; transition: all ease 0.5s;}
 .gitIcon:hover {color: gray}
 
+/* More */
+#more button {
+  width: 30%;
+  height: 8%;
+  top: 0%;
+}
+
 .section_text {
   width: 23%;
   color: gray;
