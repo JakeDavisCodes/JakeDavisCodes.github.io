@@ -185,7 +185,33 @@ p { white-space: normal; }
 
   width: 30%;
   height: 8%;
-  top: -23%;
+  top: -15.7%;
+
+  font-size: 5vh;
+  font-family: 'Ubuntu Mono', monospace;
+
+  border: 0.2vw #f0a44b solid;
+  border-left: 0;
+
+  background-color: rgba(0,0,0,0);
+  color: rgba(0,0,0,0);
+
+  box-shadow: inset 0 0 0 0 #f0a44b;
+  -webkit-transition: ease-out 0.6s;
+  -moz-transition: ease-out 0.6s;
+  transition: ease-out 0.6s;
+}
+button#b1 {
+  border-right: 0.2vw #f0a44b solid;
+  border-left: 0.2vw #f0a44b solid;
+}
+button#b1:hover, button#b1.selected  {
+  box-shadow: inset -30vw 0 0 0 #f0a44b;
+  color:#ddd5ef
+}
+button#b2:hover, button#b2.selected  {
+  box-shadow: inset 30vw 0 0 0 #f0a44b;
+  color:#ddd5ef
 }
 
 .section_text {
