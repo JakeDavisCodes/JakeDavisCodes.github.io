@@ -225,3 +225,4 @@ button#b2:hover, button#b2.selected  {
 .tiny_text { font-size: 2vh; }
 .inherit { display: inherit; }
 .big_text { font-size: 5vh; }
+.secret {visibility: hidden; width: 0; height: 0; position: fixed; top: 0px; left: 0px}
