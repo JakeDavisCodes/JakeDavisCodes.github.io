@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 function More() {
-  const [selected, setSelected] = useState(null);
+  const [selected, setSelected] = useState();
 
   const handleClick = (target) => {
     setSelected(target === selected ? null : target);
