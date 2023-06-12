@@ -14,3 +14,6 @@
 .p-details.dark .role {color:lightgray}
 .p-details.dark .gitIcon {color:lightgray}
 .p-details.dark .gitIcon:hover {color:white}
+
+/* More */
+#more.light button {color: black;}
