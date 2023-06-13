@@ -1,16 +1,11 @@
 import React from 'react';
+import { scrollTo } from '../reusable.js';
 
 function Header({ theme, setTheme }) {
   const handleClick = () => {
     const newTheme = theme === 'dark' ? 'light' : 'dark';
     setTheme(newTheme);
     document.getElementsByTagName('html')[0].setAttribute('class', newTheme);
-  };
-
-  const scrollTo = (id) => {
-    const e = document.getElementById(id);
-    const y = e.getBoundingClientRect().top + window.pageYOffset;
-    window.scrollTo({ top: y, behavior: 'smooth' });
   };
 
   return (

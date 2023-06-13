@@ -1,4 +1,5 @@
 import React from 'react';
+import { scrollTo } from '../reusable.js';
 
 import HackerText from './HackerText.jsx';
 
@@ -18,7 +19,7 @@ function About({ theme }) {
       <p>My name is Jake</p>
       <HackerText theme={theme} textArray={textArray} />
       <div className={`tiny_text section_text ${theme}`}>About</div>
-      <p className={`lead tiny_text section_text ${theme}`}>Care to see some of my work?</p>
+      <p onClick={() => scrollTo('projects')} className={`lead tiny_text section_text ${theme}`}>Care to see some of my work?</p>
     </div>
   );
 }
