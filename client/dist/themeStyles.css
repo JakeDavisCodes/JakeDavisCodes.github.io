@@ -16,4 +16,5 @@
 .p-details.dark .gitIcon:hover {color:white}
 
 /* More */
-#more.light button {color: black;}
+#more.light button:hover {color: black;}
+#more.light button.selected {color: black;}
