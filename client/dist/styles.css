@@ -37,7 +37,7 @@ html.lock {
   position:absolute;
   left: 30%;
   top: 30%;
-  height: 200vh;
+  height: 193vh;
   border: solid;
   border-width: 3;
   border-color: #f0a44b;
@@ -185,7 +185,7 @@ p { white-space: normal; }
 
   width: 30%;
   height: 8%;
-  top: -15.7%;
+  top: -22.9%;
 
   font-size: 5vh;
   font-family: 'Ubuntu Mono', monospace;
