@@ -37,7 +37,7 @@ html.lock {
   position:absolute;
   left: 30%;
   top: 30%;
-  height: 200vh;
+  height: 193vh;
   border: solid;
   border-width: 3;
   border-color: #f0a44b;
@@ -116,7 +116,8 @@ p { white-space: normal; }
 }
 #about .lead {
   top: 60%;
-  left: -2%
+  left: -2%;
+  cursor: pointer
 }
 
 /* PRJOECTS */
@@ -182,10 +183,11 @@ p { white-space: normal; }
 /* More */
 #more button {
   position: relative;
+  cursor: pointer;
 
   width: 30%;
   height: 8%;
-  top: -15.7%;
+  top: -22.9%;
 
   font-size: 5vh;
   font-family: 'Ubuntu Mono', monospace;
@@ -225,3 +227,4 @@ button#b2:hover, button#b2.selected  {
 .tiny_text { font-size: 2vh; }
 .inherit { display: inherit; }
 .big_text { font-size: 5vh; }
+.secret {visibility: hidden; width: 0; height: 0; position: fixed; top: 0px; left: 0px}
