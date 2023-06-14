@@ -42,7 +42,7 @@ function SliderItem({
       <img
         onClick={select}
         className={`${theme} ${focused ? 'focused' : ''} slider-item`}
-        src={`images/${item.wideImgSrc}.png`}
+        src={`client/dist/images/${item.wideImgSrc}.png`}
         alt={item.name}
       />
     </div>
