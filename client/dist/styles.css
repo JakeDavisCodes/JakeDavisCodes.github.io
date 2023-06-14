@@ -116,7 +116,8 @@ p { white-space: normal; }
 }
 #about .lead {
   top: 60%;
-  left: -2%
+  left: -2%;
+  cursor: pointer
 }
 
 /* PRJOECTS */
@@ -182,6 +183,7 @@ p { white-space: normal; }
 /* More */
 #more button {
   position: relative;
+  cursor: pointer;
 
   width: 30%;
   height: 8%;
