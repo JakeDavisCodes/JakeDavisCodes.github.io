@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 
+import axios from 'axios';
+
 function Contact({ theme }) {
   const [info, setInfo] = useState({});
   const [submitted, submit] = useState(false);
@@ -38,7 +40,15 @@ function Contact({ theme }) {
       alert('Please enter a message!');
     } else {
       console.log(info);
-      submit(true);
+      axios.post('/email', {
+        email: info.email,
+        subject: info.subject,
+        text: info.msg,
+        name: info.contactName,
+        phone: info.phone,
+      })
+        .then(() => submit(true))
+        .catch((err) => alert(err));
     }
   };
 
