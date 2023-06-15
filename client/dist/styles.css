@@ -47,6 +47,13 @@ html.lock {
 }
 p { white-space: normal; }
 
+#pop {
+  transition: all ease 0.8s;
+}
+#pop.hide {
+  opacity: 0;
+}
+
 /* Header CSS */
 #header {
   left: 0;
@@ -232,7 +239,7 @@ button#b2:hover, button#b2.selected  {
 
   top: 7vh;
 }
-#more .contact * {
+#more .contact input, #more .contact button, #more .contact textarea {
   font-size: 3vh;
   font-family: 'Ubuntu Mono', monospace;
   font-weight: 600;
@@ -262,12 +269,39 @@ button#b2:hover, button#b2.selected  {
   height: calc(40% - 2vw);
   padding: 1vw;
   resize: none;
+  border: 0px
 }
 .contact button {
   margin-top: 2vh;
   width: 30%;
   height: 10%;
   border: 0px;
+
+  transition: all ease 0.4s;
+}
+.contact button:hover {
+  background-color: #f0a44b;
+}
+.contact span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+  opacity: 0;
+  background-color: rgb(23,19,75);
+
+  width: 60vw;
+  height: 45vh;
+
+  z-index: -10;
+
+  transition: all ease 0.9s;
+}
+.contact span.show { opacity: 1; z-index: 103; }
+.contact span * {
+  font-size: 7vh;
 }
 
 .section_text {
