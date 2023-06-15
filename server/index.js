@@ -48,7 +48,6 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, '../client/dist'))); // SERVE CLIENT FILES
 
 app.post('/email', (req, res) => {
-  console.log(req.body);
   transporter.sendMail({
     subject: `[ PORTFOLIO CONTACT ] - ${req.body.subject}`,
     text: `${req.body.email} Reached out from your portfolio site with the following message\n\n${req.body.text}`,

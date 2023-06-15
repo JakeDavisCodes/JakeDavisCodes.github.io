@@ -1,3 +1,6 @@
+* {
+  outline:none
+}
 :root {
   font-family: 'Ubuntu Mono', monospace;
   font-weight: bold;
@@ -181,13 +184,13 @@ p { white-space: normal; }
 .gitIcon:hover {color: gray}
 
 /* More */
-#more button {
+#b1, #b2 {
   position: relative;
   cursor: pointer;
 
   width: 30%;
   height: 8%;
-  top: -22.9%;
+  top: 0%;
 
   font-size: 5vh;
   font-family: 'Ubuntu Mono', monospace;
@@ -214,6 +217,56 @@ button#b1:hover, button#b1.selected  {
 button#b2:hover, button#b2.selected  {
   box-shadow: inset 30vw 0 0 0 #f0a44b;
   color:#ddd5ef
+}
+#more .contact {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
+
+  border: solid #f0a44b 5px;
+  width: 60vw;
+  height: 45vh;
+
+  top: 7vh;
+}
+#more .contact * {
+  font-size: 3vh;
+  font-family: 'Ubuntu Mono', monospace;
+  font-weight: 600;
+}
+.contact p {
+  font-size: 8vh;
+  margin-bottom: 3vh;
+}
+.contact div {
+  width: 8%;
+  display: flex;
+  justify-content: space-evenly;
+}
+.contact div input:nth-child(2) {
+  margin: 0 2vh 0 2vh
+}
+.contact input {
+  height:5vh;
+  text-align: center;
+  margin-bottom: 2vh;
+}
+.contact .subject {
+  width: 90.3%
+}
+.contact .msg {
+  width: calc(90.3% - 2vw);
+  height: calc(40% - 2vw);
+  padding: 1vw;
+}
+.contact button {
+  margin-top: 2vh;
+  width: 30%;
+  height: 10%;
+  border: 0px;
 }
 
 .section_text {
