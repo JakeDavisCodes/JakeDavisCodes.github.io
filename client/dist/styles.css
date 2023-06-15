@@ -261,6 +261,7 @@ button#b2:hover, button#b2.selected  {
   width: calc(90.3% - 2vw);
   height: calc(40% - 2vw);
   padding: 1vw;
+  resize: none;
 }
 .contact button {
   margin-top: 2vh;
