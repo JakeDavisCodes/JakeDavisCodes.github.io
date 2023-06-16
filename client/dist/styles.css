@@ -197,7 +197,7 @@ p { white-space: normal; }
 
   width: 30%;
   height: 8%;
-  top: 0%;
+  top: -22.6%;
 
   font-size: 5vh;
   font-family: 'Ubuntu Mono', monospace;
@@ -225,8 +225,8 @@ button#b2:hover, button#b2.selected  {
   box-shadow: inset 30vw 0 0 0 #f0a44b;
   color:#ddd5ef
 }
-#more .contact {
-  position: relative;
+#more .contact, #more .about_me {
+  position:absolute;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -237,7 +237,8 @@ button#b2:hover, button#b2.selected  {
   width: 60vw;
   height: 45vh;
 
-  top: 7vh;
+  top: 235vh;
+  left: 19.7vw;
 }
 #more .contact input, #more .contact button, #more .contact textarea {
   font-size: 3vh;

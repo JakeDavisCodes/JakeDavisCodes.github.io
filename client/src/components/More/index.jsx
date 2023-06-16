@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 
 import Contact from './Contact.jsx';
+import AboutMe from './AboutMe.jsx';
 
 function More({ theme }) {
   const [position, setPos] = useState(1);
@@ -15,6 +16,7 @@ function More({ theme }) {
       <button onClick={() => handleClick(-1)} className={position === -1 ? 'selected' : null} id="b1">More About Me</button>
       <button onClick={() => handleClick(1)} className={position === 1 ? 'selected' : null} id="b2">Contact Me</button>
       <div className="bottom">
+        <AboutMe position={position} theme={theme} />
         <Contact position={position} theme={theme} />
       </div>
     </div>
