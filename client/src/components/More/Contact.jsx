@@ -1,10 +1,12 @@
+/* eslint-disable no-alert */
 import React, { useState } from 'react';
 
 import axios from 'axios';
 
-function Contact({ theme }) {
+function Contact({ position, theme }) {
   const [info, setInfo] = useState({});
   const [submitted, submit] = useState(false);
+  const [clicked, setClicked] = useState(false);
 
   const handleChange = (e) => {
     const { value, className } = e.target;
@@ -14,6 +16,8 @@ function Contact({ theme }) {
   };
 
   const handleClick = () => {
+    if (clicked) return;
+
     if (info.contactName === undefined || info.contactName.length < 3) {
       document.getElementsByClassName('contactName')[0].focus();
       alert('Please fill in your name!');
@@ -39,7 +43,7 @@ function Contact({ theme }) {
       document.getElementsByClassName('msg')[0].focus();
       alert('Please enter a message!');
     } else {
-      console.log(info);
+      setClicked(true);
       axios.post('/email', {
         email: info.email,
         subject: info.subject,
@@ -48,12 +52,19 @@ function Contact({ theme }) {
         phone: info.phone,
       })
         .then(() => submit(true))
+        .then(() => setClicked(false))
         .catch((err) => alert(err));
     }
   };
 
   return (
-    <div className={`${theme} contact`}>
+    <div
+      className={`${theme} contact`}
+      style={{
+        transform: `translate3d(${position === 1 ? '0' : '150'}%, 0, 0)`,
+        transition: 'all 0.6s ease',
+      }}
+    >
       <div>
         <input onChange={(e) => handleChange(e)} className="contactName" placeholder="Your Name" />
         <input onChange={(e) => handleChange(e)} className="phone" placeholder="Phone Number" />

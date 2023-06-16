@@ -50,7 +50,10 @@ app.use(express.static(path.join(__dirname, '../client/dist'))); // SERVE CLIENT
 app.post('/email', (req, res) => {
   transporter.sendMail({
     subject: `[ PORTFOLIO CONTACT ] - ${req.body.subject}`,
-    text: `${req.body.email} Reached out from your portfolio site with the following message\n\n${req.body.text}`,
+    text: `${req.body.name} Reached out from your portfolio site with the following message\n\n
+      ${req.body.text}\n\n
+      They provided the following email: ${req.body.email}\n
+      And ${req.body.phone ? `the following phone number: ${req.body.phone}` : 'they did not provide a phone number'}`,
     from: process.env.EMAIL_USER,
     to: process.env.EMAIL_USER,
   }, (err) => {
