@@ -227,11 +227,6 @@ button#b2:hover, button#b2.selected  {
 }
 #more .contact, #more .about_me {
   position:absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  flex-direction: column;
 
   border: solid #f0a44b 5px;
   width: 60vw;
@@ -239,6 +234,13 @@ button#b2:hover, button#b2.selected  {
 
   top: 235vh;
   left: 19.7vw;
+}
+#more .contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-direction: column;
 }
 #more .contact input, #more .contact button, #more .contact textarea {
   font-size: 3vh;
@@ -303,6 +305,24 @@ button#b2:hover, button#b2.selected  {
 .contact span.show { opacity: 1; z-index: 103; }
 .contact span * {
   font-size: 7vh;
+}
+.about_me {
+
+}
+.skill {
+  display: flex;
+  margin-bottom: 2%;
+  margin-left: 1vw;
+}
+.skill small {
+  position: relative;
+  font-size: 3.5vh;
+  width: 55%;
+
+}
+.skill p {
+  width:40%;
+  margin-right: 1.7vw;
 }
 
 .section_text {
