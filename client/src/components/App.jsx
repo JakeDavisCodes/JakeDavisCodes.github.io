@@ -4,6 +4,7 @@ import Header from './Header/index.jsx';
 import About from './About/index.jsx';
 import Projects from './Projects/index.jsx';
 import More from './More/index.jsx';
+import Footer from './Footer.jsx';
 
 function App() {
   const [theme, setTheme] = useState('dark');
@@ -16,6 +17,7 @@ function App() {
       <About theme={theme} />
       <Projects theme={theme} />
       <More theme={theme} />
+      {/* <Footer theme={theme} /> */}
     </div>
   );
 }
