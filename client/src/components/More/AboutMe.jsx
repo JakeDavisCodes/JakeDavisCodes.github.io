@@ -1,14 +1,9 @@
 /* eslint-disable jsx-a11y/img-redundant-alt */
 import React from 'react';
 
-function Skill({ type, list }) {
+function DropDown({ type, list }) {
   return (
-    <div className="skill">
-      <p>
-        {type}
-      </p>
-      <small>{list.join(' | ')}</small>
-    </div>
+    <div className="dropdown" />
   );
 }
 
