@@ -19,3 +19,6 @@
 #more.light button:hover {color: black;}
 #more.light button.selected {color: black;}
 .contact.light button {color: black}
+.contact textarea, .contact input, .contact button { transition: all ease 0.5s;}
+.contact.dark input, .contact.dark textarea,  .contact.dark button {background-color: rgb(23,19,75); color: #fbe5fe}
+.dark ::placeholder {color: #beb7ce}

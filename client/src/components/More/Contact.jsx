@@ -62,7 +62,7 @@ function Contact({ position, theme }) {
       className={`${theme} contact`}
       style={{
         transform: `translate3d(${position === 1 ? '0' : '150'}%, 0, 0)`,
-        transition: 'all 0.6s ease',
+        transition: 'all .8s ease',
       }}
     >
       <div>
