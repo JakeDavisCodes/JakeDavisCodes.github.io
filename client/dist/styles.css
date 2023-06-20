@@ -83,6 +83,7 @@ p { white-space: normal; }
   height: 100%;
   width: 33.33%;
   font-size: 3.5vh;
+  cursor: pointer;
 }
 .section-button:hover { z-index: 100; font-size: 4vh; }
 .section-button.fix-border { border-left: solid .15vw gray; }
@@ -106,6 +107,7 @@ p { white-space: normal; }
   right: 3%;
   margin: auto 0;
   position: relative;
+  cursor: pointer;
 }
 .moon-icon { color: #031c38; }
 .moon-icon:hover {color: #5c6d83; font-size: 4.2vh;}
@@ -283,6 +285,7 @@ button#b2:hover, button#b2.selected  {
   transition: all ease 0.4s;
 
   border: 0.1vw #f0a44b solid;
+  cursor: pointer;
 }
 .contact button:hover {
   background-color: #f0a44b !important;
@@ -336,6 +339,7 @@ button#b2:hover, button#b2.selected  {
   border-bottom: solid .2vh gray;
 
   transition: all ease 0.4s;
+  cursor: pointer;
 }
 .about_me .left div:nth-child(5) {
   border-bottom: 0vh;
@@ -352,14 +356,18 @@ button#b2:hover, button#b2.selected  {
   flex-direction: column;
 
   width: 100%;
+  height:100%;
 }
-
-
-/* Footer */
-#footer {
-  background-color: #433E9D;
-  height: 20vh;
-  width: 100vw;
+.about_me .right p {
+  font-size: 6vh;
+  margin: 1vh auto 1vh auto;
+  padding-bottom: 1vh;
+  border-bottom: solid 0.3vh gray;
+  width: 90%;
+}
+.about_me .right small {
+  font-size: 4vh;
+  margin-left: 2.5vw;
 }
 
 .section_text {

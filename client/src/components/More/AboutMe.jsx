@@ -15,23 +15,31 @@ function AboutMe({ position, theme }) {
     >
       <div className="left">
         {['Front-End', 'Back-End', 'Testing/Deploy', 'Dev Tools', 'Methodoligies'].map((title, idx) => (
-          <div className={idx === current ? 'current' : null} onClick={() => setCurrent(idx)}>{title}</div>
+          <div className={idx === current ? 'current' : null} onClick={() => setCurrent(idx)}>{title + (idx === current ? ' •' : '')}</div>
         ))}
       </div>
       <div className="right">
-        {[['JavaScript', 'TypeScript', 'React', 'ReactNative', 'HTML', 'CSS'],
-          ['Node.JS', 'Express', 'PostgreSQL', 'MongoDB', 'MySQL', 'REST', 'FireBase'],
-          ['K6', 'Loader.IO ', 'Jest', 'SuperTest', 'Mocha', 'Chai', 'AWS', 'DreamHost'],
-          ['Vim', 'Git', 'NPM', 'Nx', 'Webpacl', 'Babel'],
-          ['Scrum', 'Agile', 'TDD'],
+        {[['Front-End Skills', 'JavaScript', 'TypeScript', 'React', 'ReactNative', 'HTML', 'CSS'],
+          ['Back-End Skills', 'Node.JS', 'Express', 'PostgreSQL', 'MongoDB', 'MySQL', 'REST', 'FireBase'],
+          ['Testing/Deploy', 'K6', 'Loader.IO ', 'Jest', 'SuperTest', 'Mocha', 'Chai', 'AWS', 'DreamHost'],
+          ['Developer Tools', 'Vim', 'Git', 'NPM', 'Nx', 'Webpacl', 'Babel'],
+          ['Methodoligies', 'Scrum', 'Agile', 'TDD'],
         ].map((list, idx) => (
           <div
             style={{
-              transform: `translateX(${(idx * 100) - (100 * current)}%)`,
+              opacity: `${current === idx ? 1 : 0}`,
+              transform: `translateX(${current === idx ? 0 : 100}%)`,
               transition: ['all 0.7s ease'],
             }}
           >
-            {list.map((item) => <small>{item}</small>)}
+            <p>{list.shift()}</p>
+            {list.map((item) => (
+              <small>
+                •
+                {' '}
+                {item}
+              </small>
+            ))}
           </div>
         ))}
       </div>
