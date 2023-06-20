@@ -193,6 +193,7 @@ p { white-space: normal; }
 .gitIcon:hover {color: gray}
 
 /* More */
+#more * { font-weight: 400; }
 #b1, #b2 {
   position: relative;
   cursor: pointer;
