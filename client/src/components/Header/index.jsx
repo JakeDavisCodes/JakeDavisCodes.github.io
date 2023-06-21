@@ -11,7 +11,7 @@ function Header({ theme, setTheme }) {
   return (
     <div id="header" className={theme}>
       <div id="bg" className={theme} />
-      <div className={`${theme} name`}>
+      <div onClick={() => scrollTo('home')} className={`${theme} name`}>
         <p>Jacob</p>
         <p className="bold">ROYAL</p>
         <p>Davis</p>

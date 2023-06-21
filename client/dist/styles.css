@@ -91,7 +91,10 @@ p { white-space: normal; }
   margin-left: 30px;
   display: flex;
   align-items: center;
+  transition: all ease 0.4s;
+  cursor: pointer;
 }
+.name:hover { transform: scale(1.1);}
 .name p {
   font-size: 4vh;
   font-weight: bold;
@@ -114,8 +117,8 @@ p { white-space: normal; }
 .sun-icon {color: #ddd5ef;}
 .sun-icon:hover {color: #ffffff; font-size: 4.2vh;}
 
-/* ABOUT */
-#about {
+/* Home */
+#home {
   position: relative;
   left: 39%;
   display: flex;
@@ -126,7 +129,7 @@ p { white-space: normal; }
   margin-left: 2.8vh;
   color: #5B43A6
 }
-#about .lead {
+#home .lead {
   top: 60%;
   left: -2%;
   cursor: pointer

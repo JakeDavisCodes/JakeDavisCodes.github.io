@@ -14,7 +14,7 @@ const textArray = [
 
 function About({ theme }) {
   return (
-    <div className="page_section big_text" id="about">
+    <div className="page_section big_text" id="home">
       <p>Hello,</p>
       <p>My name is Jake</p>
       <HackerText theme={theme} textArray={textArray} />

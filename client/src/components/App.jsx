@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import Header from './Header/index.jsx';
-import About from './About/index.jsx';
+import Home from './Home/index.jsx';
 import Projects from './Projects/index.jsx';
 import More from './More/index.jsx';
 
@@ -13,7 +13,7 @@ function App() {
       <div id="bg" className={theme} />
       <div id="line" />
       <Header theme={theme} setTheme={setTheme} />
-      <About theme={theme} />
+      <Home theme={theme} />
       <Projects theme={theme} />
       <More theme={theme} />
     </div>
