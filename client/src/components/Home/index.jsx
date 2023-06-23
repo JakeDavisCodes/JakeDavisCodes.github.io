@@ -12,16 +12,16 @@ const textArray = [
   'Team Player',
 ];
 
-function About({ theme }) {
+function Home({ theme }) {
   return (
     <div className="page_section big_text" id="home">
       <p>Hello,</p>
       <p>My name is Jake</p>
       <HackerText theme={theme} textArray={textArray} />
-      <div className={`tiny_text section_text ${theme}`}>About</div>
+      <div className={`tiny_text section_text ${theme}`}>Home</div>
       <p onClick={() => scrollTo('projects')} className={`lead tiny_text section_text ${theme}`}>Care to see some of my work?</p>
     </div>
   );
 }
 
-export default About;
+export default Home;
