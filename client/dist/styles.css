@@ -120,10 +120,62 @@ p { white-space: normal; }
 /* About */
 #about .section_text {top:120%;  left: 5.5%}
 #about img {
-  width: 30vh;
-  height: 50vh;
+  width: 20vh;
+  height: 20vh;
+  border-radius: 50%;
   object-fit: cover;
   object-position: 20% 0%;
+  margin: 4vh auto
+}
+#about {
+  display: flex;
+  flex-direction: column;
+}
+#about .text {
+  height: 25vh;
+  display: flex;
+  width: 40%;
+  overflow: hidden;
+}
+#about p {
+  display: block;
+  position: absolute;
+  width: 40%;
+  font-size: 3vh;
+  margin: auto 2vh;
+}
+#about .chev {
+  position: relative;
+  cursor: pointer;
+  transition-duration: 0.4s;
+  -webkit-transition-duration:
+  0.4s;font-size: 4vh;
+  margin: 0 auto;
+}
+#about .chev:active:after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  opacity: 1;
+  transition: 0s;
+}
+#about .chev:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px white;
+}
+#about .chev:active {
+  top: 1px;
 }
 
 /* Home */
@@ -243,7 +295,7 @@ button#b2:hover, button#b2.selected  {
 #more .contact, #more .about_me {
   position:absolute;
 
-  border: solid #f0a44b 0.2vw;
+  /* border: solid #f0a44b 0.2vw; */
   width: 60vw;
   height: 45vh;
 
@@ -395,3 +447,29 @@ button#b2:hover, button#b2.selected  {
 .inherit { display: inherit; }
 .big_text { font-size: 5vh; }
 .secret {visibility: hidden; width: 0; height: 0; position: fixed; top: 0px; left: 0px}
+
+.chev:active:after {
+  box-shadow: 0 0 0 0 white;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  opacity: 1;
+  transition: 0s;
+}
+.chev:after {
+  content: "";
+  display: block;
+  position: absolute;
+  border-radius: 4em;
+  left: 0;
+  top:0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.5s;
+  box-shadow: 0 0 10px 40px white;
+}
+.chev:active {
+  top: 1px;
+}
