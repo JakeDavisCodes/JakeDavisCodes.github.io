@@ -144,12 +144,17 @@ p { white-space: normal; }
   font-size: 3vh;
   margin: auto 2vh;
 }
+.dots { margin: 0 auto}
+.dot {
+  font-size: 2.5vh;
+  margin: 1vh 0.3vh
+}
 #about .chev {
   position: relative;
   cursor: pointer;
   transition-duration: 0.4s;
-  -webkit-transition-duration:
-  0.4s;font-size: 4vh;
+  -webkit-transition-duration: 0.4s;
+  font-size: 4vh;
   margin: 0 auto;
 }
 #about .chev:active:after {

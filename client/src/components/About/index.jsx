@@ -48,6 +48,11 @@ function About({ theme }) {
           </p>
         ))}
       </div>
+      <div className="dots">
+        {paragraphs.map((p, idx) => (
+          <i className={`dot fa-${idx === para ? 'solid' : 'regular'} fa-circle-dot`} />
+        ))}
+      </div>
       <i onClick={handleClick} className="chev fa-solid fa-chevron-down" />
       <div className={`tiny_text section_text ${theme}`}>About</div>
     </div>
