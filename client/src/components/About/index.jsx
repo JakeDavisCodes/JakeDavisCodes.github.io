@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { scrollTo } from '../reusable.js';
 
 import Selector from './Selector.jsx';
 
