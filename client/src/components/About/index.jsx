@@ -4,23 +4,28 @@ import { scrollTo } from '../reusable.js';
 import Selector from './Selector.jsx';
 
 const paragraphs = [
-  `My name is Jake Davis, I grew up in Aurora, Colorado and during grade school,
-   I found my passion for code. But I'm sure you already know I'm a nerd,
-   so let me tell you more about me!`,
+  `Hey there! I'm Jake Davis, originally from Aurora, Colorado.
+   Growing up, I discovered my passion for coding during grade school.
+   Now, you probably already know I'm a bit of a nerd,
+   but let me share more about myself!`,
 
-  `I'm interested in a great many things. I'm a collector of Lego Star Wars
-   and other Star Wars items. Along with my lego collection, I have a small
-   collection of mechanical watches that I'm very proud of and would love
-   to tell you more about!`,
+  `I have a wide range of interests that keep me engaged.
+   One of my favorite hobbies is collecting Lego Star Wars memorabilia
+   and other cool Star Wars items. In addition, I take pride in my
+   small collection of mechanical watches, which I'd be delighted
+   to share more about!`,
 
-  `Beyond just my collecting, I also love rock climbing! Climbing in general
-   had always been a great passion of mine, but a few years ago I signed up
-   for a a rock gym membership and started to get very good at top rope in my gym!`,
+  `Beyond my collecting hobbies, I'm also an enthusiastic rock climber.
+   Climbing has always been a profound passion of mine,
+   but a few years ago, I took it a step further and joined a rock gym.
+   Since then, I've honed my skills in top rope climbing,
+   and I'm loving every minute of it!`,
 
-  `Along with rock climbing, I'm also an avid airsoft player at a local field!
-   Airsoft gear is something I love to collect and play with. I enjoy the
-   problem solving and tactics that come with both rock climbing and airsoft,
-   and I believe that much of it translates to problem solving in code!`,
+  `When I'm not conquering cliffs, you'll find me fully immersed
+  in the world of airsoft. I'm an avid player at a local field
+  and enjoy collecting and tinkering with airsoft gear.
+  The problem-solving and tactical thinking required in both rock climbing
+  and airsoft translate seamlessly to my coding endeavors!`,
 ];
 
 function About({ theme }) {
