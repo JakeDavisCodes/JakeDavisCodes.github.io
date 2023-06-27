@@ -143,21 +143,32 @@ p { white-space: normal; }
   width: 40%;
   font-size: 3vh;
   margin: auto 2vh;
+  justify-content: center;
+  text-align: center;
+}
+.selector_container {
+  margin: 0 auto
+}
+.caret {
+  position: relative;
+  font-size: 3vh;
+  top: -21%;
+  right: -4.3%
 }
 .dots { margin: 0 auto}
-.dot {
+/* .dot {
   font-size: 2.5vh;
   margin: 1vh 0.3vh
-}
-#about .chev {
+} */
+#about .dot {
   position: relative;
   cursor: pointer;
   transition-duration: 0.4s;
   -webkit-transition-duration: 0.4s;
-  font-size: 4vh;
-  margin: 0 auto;
+  font-size: 2.5vh;
+  margin: 1vh 0.3vh
 }
-#about .chev:active:after {
+#about .dot:active:after {
   box-shadow: 0 0 0 0 white;
   position: absolute;
   border-radius: 4em;
@@ -166,7 +177,7 @@ p { white-space: normal; }
   opacity: 1;
   transition: 0s;
 }
-#about .chev:after {
+#about .dot:after {
   content: "";
   display: block;
   position: absolute;
@@ -179,7 +190,7 @@ p { white-space: normal; }
   transition: all 0.5s;
   box-shadow: 0 0 10px 40px white;
 }
-#about .chev:active {
+#about .dot:active {
   top: 1px;
 }
 

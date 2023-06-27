@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { scrollTo } from '../reusable.js';
 
+import Selector from './Selector.jsx';
+
 const paragraphs = [
   `My name is Jake Davis, I grew up in Aurora, Colorado and during grade school,
    I found my passion for code. But I'm sure you already know I'm a nerd,
@@ -24,8 +26,8 @@ const paragraphs = [
 function About({ theme }) {
   const [para, setPara] = useState(0);
 
-  const handleClick = () => {
-    setPara(para + 1 === 4 ? 0 : para + 1);
+  const handleClick = (p) => {
+    setPara(p);
   };
 
   return (
@@ -48,12 +50,7 @@ function About({ theme }) {
           </p>
         ))}
       </div>
-      <div className="dots">
-        {paragraphs.map((p, idx) => (
-          <i className={`dot fa-${idx === para ? 'solid' : 'regular'} fa-circle-dot`} />
-        ))}
-      </div>
-      <i onClick={handleClick} className="chev fa-solid fa-chevron-down" />
+      <Selector select={handleClick} options={4} current={para} />
       <div className={`tiny_text section_text ${theme}`}>About</div>
     </div>
   );
