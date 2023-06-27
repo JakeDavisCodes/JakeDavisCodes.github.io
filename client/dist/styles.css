@@ -146,6 +146,8 @@ p { white-space: normal; }
   justify-content: center;
   text-align: center;
 }
+
+/* Selector */
 .selector_container {
   margin: 0 auto
 }
@@ -155,12 +157,8 @@ p { white-space: normal; }
   top: -21%;
   right: -4.3%
 }
-.dots { margin: 0 auto}
-/* .dot {
-  font-size: 2.5vh;
-  margin: 1vh 0.3vh
-} */
-#about .dot {
+.dots { margin: 0 auto }
+.dot {
   position: relative;
   cursor: pointer;
   transition-duration: 0.4s;
@@ -168,7 +166,7 @@ p { white-space: normal; }
   font-size: 2.5vh;
   margin: 1vh 0.3vh
 }
-#about .dot:active:after {
+.dot:active:after {
   box-shadow: 0 0 0 0 white;
   position: absolute;
   border-radius: 4em;
@@ -177,7 +175,7 @@ p { white-space: normal; }
   opacity: 1;
   transition: 0s;
 }
-#about .dot:after {
+.dot:after {
   content: "";
   display: block;
   position: absolute;
@@ -190,7 +188,7 @@ p { white-space: normal; }
   transition: all 0.5s;
   box-shadow: 0 0 10px 40px white;
 }
-#about .dot:active {
+.dot:active {
   top: 1px;
 }
 
