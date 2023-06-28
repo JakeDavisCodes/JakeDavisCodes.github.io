@@ -10,7 +10,14 @@ function Contact({ position, theme }) {
         transition: 'all .8s ease',
       }}
     >
-      PH
+      <div className="gmail">
+        <i className="gmail_icon fa-solid fa-envelope" />
+        <p
+          onClick={() => { window.location = 'mailto:JakeDavisEmail@gmail.com'; }}
+        >
+          - JakeDavisEmail@gmail.com
+        </p>
+      </div>
     </div>
   );
 }

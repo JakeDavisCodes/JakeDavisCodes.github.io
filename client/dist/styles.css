@@ -323,6 +323,15 @@ button#b2:hover, button#b2.selected  {
 
   flex-direction: column;
 }
+.gmail_icon {
+  font-weight: 900;
+}
+.contact .gmail {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.gmail p { cursor: pointer }
 .about_me {
   position: relative;
   display: flex;
