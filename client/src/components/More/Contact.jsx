@@ -1,7 +1,46 @@
 /* eslint-disable no-alert */
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+
+function Info({ onClick, className, text }) {
+  return (
+    <div className={`${className} contact_info`}>
+      <i className={`${className}_icon fa-solid fa-${className}`} />
+      <p
+        className="fancy"
+        onClick={() => { navigator.clipboard.writeText(text); onClick(); }}
+      >
+        {text}
+      </p>
+    </div>
+  );
+}
+
+function Notif({ setNotif, show, message }) {
+  useEffect(() => {
+    setTimeout(() => {
+      setNotif({ show: false, message });
+    }, 2000);
+  }, [show !== false]);
+
+  return (
+    <div
+      className="notification"
+      style={{
+        transform: `translateY(${show ? 150 : 200}%)`,
+      }}
+    >
+      {message}
+    </div>
+  );
+}
 
 function Contact({ position, theme }) {
+  const [notif, setNotif] = useState({ show: false, message: null });
+
+  const onClick = () => {
+    setNotif({ show: true, message: 'Copied to Clipboard' });
+  };
+
   return (
     <div
       className={`${theme} contact`}
@@ -10,14 +49,11 @@ function Contact({ position, theme }) {
         transition: 'all .8s ease',
       }}
     >
-      <div className="gmail">
-        <i className="gmail_icon fa-solid fa-envelope" />
-        <p
-          onClick={() => { window.location = 'mailto:JakeDavisEmail@gmail.com'; }}
-        >
-          - JakeDavisEmail@gmail.com
-        </p>
-      </div>
+      <p>{'I\'d love to hear from you!'}</p>
+      <p className="p2">You can reach out to me with my contact information below.</p>
+      <Info onClick={onClick} className="envelope" text="JakeDavisEmail@gmail.com" />
+      <Info onClick={onClick} className="mobile" text="(303) 419-5300" />
+      <Notif setNotif={setNotif} show={notif.show} message={notif.message} />
     </div>
   );
 }
