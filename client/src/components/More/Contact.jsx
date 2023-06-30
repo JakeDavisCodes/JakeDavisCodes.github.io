@@ -20,7 +20,7 @@ function Notif({ setNotif, show, message }) {
     setTimeout(() => {
       setNotif({ show: false, message });
     }, 2000);
-  }, [show !== false]);
+  }, [show]);
 
   return (
     <div
@@ -35,7 +35,7 @@ function Notif({ setNotif, show, message }) {
 }
 
 function Contact({ position, theme }) {
-  const [notif, setNotif] = useState({ show: false, message: null });
+  const [notif, setNotif] = useState({ show: false, message: 'Copied to Clipboard' });
 
   const onClick = () => {
     setNotif({ show: true, message: 'Copied to Clipboard' });

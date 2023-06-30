@@ -350,7 +350,6 @@ button#b2:hover, button#b2.selected  {
   width: 30vw;
   height:30vh;
   text-align: center;
-  transform: rotateZ(10deg);
   position: absolute;
   margin: auto;
   transition: all ease 0.5s;
