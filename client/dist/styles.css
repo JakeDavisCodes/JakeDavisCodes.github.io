@@ -292,7 +292,7 @@ p { white-space: normal; }
   font-size: 5vh;
   font-family: 'Ubuntu Mono', monospace;
 
-  border: 0.3vh #f0a44b solid;
+  border: 0.4vh #f0a44b solid;
   border-left: 0;
 
   background-color: rgba(0,0,0,0);
@@ -304,8 +304,8 @@ p { white-space: normal; }
   transition: ease-out 0.6s;
 }
 button#b1 {
-  border-right: 0.3vh #f0a44b solid;
-  border-left: 0.3vh #f0a44b solid;
+  border-right: 0.4vh #f0a44b solid;
+  border-left: 0.4vh #f0a44b solid;
 }
 button#b1:hover, button#b1.selected  {
   box-shadow: inset -30vw 0 0 0 #f0a44b;
@@ -357,12 +357,12 @@ button#b2:hover, button#b2.selected  {
 }
 .notification {
   width: 30vw;
-  height:10vh;
   text-align: center;
   position: absolute;
   margin: auto;
   transition: all ease 0.5s;
-  border: #f0a44b solid 0.3vh
+  border: #f0a44b solid 0.4vh;
+  background-color: rgba(0,0,0,0.25);
 }
 .about_me {
   position: relative;
@@ -381,7 +381,7 @@ button#b2:hover, button#b2.selected  {
 .about_me .left {
   display: flex;
   flex-direction: column;
-  border-right: 0.3vh #f0a44b solid;
+  border-right: 0.4vh #f0a44b solid;
 }
 .about_me .left div {
   display: flex;
@@ -415,7 +415,7 @@ button#b2:hover, button#b2.selected  {
   font-size: 6vh;
   margin: 1vh auto 1vh auto;
   padding-bottom: 1vh;
-  border-bottom: solid 0.3vh gray;
+  border-bottom: solid 0.4vh gray;
   width: 90%;
 }
 .about_me .right small {

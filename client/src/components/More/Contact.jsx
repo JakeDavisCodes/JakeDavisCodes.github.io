@@ -26,7 +26,7 @@ function Notif({ setNotif, show, message }) {
     <div
       className="notification"
       style={{
-        transform: `translateY(${show ? 150 : 200}%)`,
+        transform: `translateY(${show ? 500 : 1000}%)`,
       }}
     >
       {message}
