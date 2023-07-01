@@ -19,7 +19,6 @@ function SliderItem({
       className={`item-container ${focused ? 'focused' : ''}`}
       style={{
         transform: `translate3d(${-transform}%, 0, 0) ${focused ? 'scale(1.5)' : 'scale(1)'}`,
-        transition: 'all 0.4s ease',
         zIndex: focused ? 4 : 1,
       }}
     >
@@ -28,7 +27,6 @@ function SliderItem({
         style={{
           opacity: `${details ? 1 : 0}`,
           transform: `${details ? 'translateY(0%)' : 'translateY(100%)'}`,
-          transition: 'all 0.7s ease',
         }}
       >
         <div className="upper">

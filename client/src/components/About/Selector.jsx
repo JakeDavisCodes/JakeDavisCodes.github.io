@@ -25,7 +25,6 @@ function Selector({ select, options, current }) {
       <i
         style={{
           transform: `translateX(${hov * (168)}%)`,
-          transition: ['transform 0.7s ease', 'opacity 1s ease'],
         }}
         className="caret fa-solid fa-caret-up"
       />

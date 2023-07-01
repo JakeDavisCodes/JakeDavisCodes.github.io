@@ -10,7 +10,6 @@ function AboutMe({ position, theme }) {
       className={`${theme} about_me`}
       style={{
         transform: `translate3d(${position === -1 ? '0' : '-150'}%, 0, 0)`,
-        transition: 'all .8s ease',
       }}
     >
       <div className="left">
@@ -26,10 +25,10 @@ function AboutMe({ position, theme }) {
           ['Methodoligies', 'Scrum', 'Agile', 'TDD'],
         ].map((list, idx) => (
           <div
+            className="skills"
             style={{
               opacity: `${current === idx ? 1 : 0}`,
               transform: `translateX(${current === idx ? 0 : 100}%)`,
-              transition: ['all 0.7s ease'],
             }}
           >
             <p>{list.shift()}</p>

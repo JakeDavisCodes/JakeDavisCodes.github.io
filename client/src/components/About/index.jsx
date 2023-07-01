@@ -47,7 +47,6 @@ function About({ theme }) {
               zIndex: `${idx === para ? 100 : -100}`,
               opacity: `${idx === para ? 1 : 0}`,
               transform: `${idx === para ? 'translateY(0%)' : 'translateY(30%)'}`,
-              transition: ['transform 0.7s ease', 'opacity 1s ease'],
             }}
           >
             {p}
