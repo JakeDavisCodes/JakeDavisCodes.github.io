@@ -1,60 +1,44 @@
 /* eslint-disable no-alert */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 
-import axios from 'axios';
+function Info({ onClick, className, text }) {
+  return (
+    <div className={`${className} contact_info`}>
+      <i className={`${className}_icon fa-solid fa-${className}`} />
+      <p
+        className="fancy"
+        onClick={() => { navigator.clipboard.writeText(text); onClick(); }}
+      >
+        {text}
+      </p>
+    </div>
+  );
+}
+
+function Notif({ setNotif, show, message }) {
+  useEffect(() => {
+    setTimeout(() => {
+      setNotif({ show: false, message });
+    }, 2000);
+  }, [show]);
+
+  return (
+    <div
+      className="notification"
+      style={{
+        transform: `translateY(${show ? 500 : 1000}%)`,
+      }}
+    >
+      {message}
+    </div>
+  );
+}
 
 function Contact({ position, theme }) {
-  const [info, setInfo] = useState({});
-  const [submitted, submit] = useState(false);
-  const [clicked, setClicked] = useState(false);
+  const [notif, setNotif] = useState({ show: false, message: 'Copied to Clipboard' });
 
-  const handleChange = (e) => {
-    const { value, className } = e.target;
-    const clone = info;
-    clone[className] = value;
-    setInfo(clone);
-  };
-
-  const handleClick = () => {
-    if (clicked) return;
-
-    if (info.contactName === undefined || info.contactName.length < 3) {
-      document.getElementsByClassName('contactName')[0].focus();
-      alert('Please fill in your name!');
-      return;
-    }
-    if (!info.email || !info.email.includes('@') || !info.email.includes('.')) {
-      document.getElementsByClassName('email')[0].focus();
-      alert('Please enter a valid email!');
-      return;
-    }
-
-    let [e1, e2, e3] = '';
-    [e1] = info.email.split('@');
-    e3 = info.email.split('').reverse().join('').split('.')[0].split('').reverse().join('');
-    e2 = info.email.split('').reverse().join('').split('.')[1].split('@')[0].split('').reverse().join('');
-    if (!e1 || !e2 || e3.length < 2) {
-      document.getElementsByClassName('email')[0].focus();
-      alert('Please enter a valid email!');
-    } else if (!info.subject || info.subject.length < 4) {
-      document.getElementsByClassName('subject')[0].focus();
-      alert('Please enter a subject!');
-    } else if (!info.msg || info.msg.length < 10) {
-      document.getElementsByClassName('msg')[0].focus();
-      alert('Please enter a message!');
-    } else {
-      setClicked(true);
-      axios.post('/email', {
-        email: info.email,
-        subject: info.subject,
-        text: info.msg,
-        name: info.contactName,
-        phone: info.phone,
-      })
-        .then(() => submit(true))
-        .then(() => setClicked(false))
-        .catch((err) => alert(err));
-    }
+  const onClick = () => {
+    setNotif({ show: true, message: 'Copied to Clipboard' });
   };
 
   return (
@@ -62,21 +46,13 @@ function Contact({ position, theme }) {
       className={`${theme} contact`}
       style={{
         transform: `translate3d(${position === 1 ? '0' : '150'}%, 0, 0)`,
-        transition: 'all .8s ease',
       }}
     >
-      <div>
-        <input onChange={(e) => handleChange(e)} className="contactName" placeholder="Your Name" />
-        <input onChange={(e) => handleChange(e)} className="phone" placeholder="Phone Number" />
-        <input onChange={(e) => handleChange(e)} className="email" placeholder="Email" />
-      </div>
-      <input onChange={(e) => handleChange(e)} className="subject" placeholder="Subject" />
-      <textarea onChange={(e) => handleChange(e)} className="msg" placeholder="Your message here!" />
-      <button onClick={() => handleClick()}>Send</button>
-      <span className={submitted ? 'show' : null}>
-        <p>Thanks for the Email,</p>
-        <p>{'I\'ll be geting back to you!'}</p>
-      </span>
+      <p>{'I\'d love to hear from you!'}</p>
+      <p className="p2">You can reach out to me with my contact information below.</p>
+      <Info onClick={onClick} className="envelope" text="JakeDavisEmail@gmail.com" />
+      <Info onClick={onClick} className="mobile" text="(303) 419-5300" />
+      <Notif setNotif={setNotif} show={notif.show} message={notif.message} />
     </div>
   );
 }

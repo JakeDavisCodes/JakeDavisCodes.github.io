@@ -4,7 +4,7 @@ import Contact from './Contact.jsx';
 import AboutMe from './AboutMe.jsx';
 
 function More({ theme }) {
-  const [position, setPos] = useState(-1);
+  const [position, setPos] = useState(1);
 
   const handleClick = (target) => {
     setPos(target === position ? null : target);
