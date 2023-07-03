@@ -13,7 +13,7 @@
   <img src='https://img.shields.io/badge/Express.js-404D59?style=for-the-badge' />
 </div>
 
-Description
+This is my personal portfolio site built completly from scratch using raw React, CSS, HTML, and JavaScript.
 
 # Features
 X
