@@ -332,6 +332,7 @@ button#b2:hover, button#b2.selected  {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  overflow: hidden;
 }
 .contact_info i {
   font-weight: 900;
@@ -362,7 +363,7 @@ button#b2:hover, button#b2.selected  {
   margin: auto;
   transition: all ease 0.5s;
   border: #f0a44b solid 0.4vh;
-  background-color: rgba(0,0,0,0.25);
+  background-color: rgba(0,0,0,0.75);
 }
 .about_me {
   position: relative;
