@@ -16,4 +16,21 @@
 This is my personal portfolio site built completly from scratch using raw React, CSS, HTML, and JavaScript.
 
 # Features
-X
+Four different page sections and a header section
+
+## Header
+Buttons and title that will scroll the user to the clicked page.
+In the case of the title being clicked, my name, the page will return to the top.
+Contains theme button that shifts the background and colors of much of the page.
+
+## Home / Title
+Page simply displays my name and some of my roles
+Contains text feature called 'Hacker Text'. This text will create a random shifting line of text which once filled to the complete length will begin to decode to reveal a word.
+
+## About
+
+
+## Projects
+
+
+## More
