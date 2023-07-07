@@ -28,9 +28,14 @@ Page simply displays my name and some of my roles
 Contains text feature called 'Hacker Text'. This text will create a random shifting line of text which once filled to the complete length will begin to decode to reveal a word.
 
 ## About
-
+Stellar picture of me :)
+Dynamic paragraph with 'fancy' buttons and dynamic indicator.
 
 ## Projects
-
+Carousel style of display for all different projects, Dynamic resizing and moving of individual items.
+Details of project appear on click and include: Project Name, My Role, Brief Description, Tech stack, and GitHub link
 
 ## More
+Selection buttons that switch between two sections. Buttons synamically fill in when hovered or selected.
+Section One contains a selector which reveals different skills and technologies I am expierienced in.
+Section Two displays my contact infrormation.
