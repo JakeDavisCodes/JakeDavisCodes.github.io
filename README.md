@@ -13,7 +13,7 @@
   <img src='https://img.shields.io/badge/Express.js-404D59?style=for-the-badge' />
 </div>
 
-This is my personal portfolio site built completly from scratch using raw React, CSS, HTML, and JavaScript.
+This is my personal portfolio site built completely from scratch using raw React, CSS, HTML, and JavaScript.
 
 ## Features
 Four different page sections and a header section
@@ -21,7 +21,7 @@ Four different page sections and a header section
 ##### Header
 Buttons and title that will scroll the user to the clicked page.
 In the case of the title being clicked, my name, the page will return to the top.
-Contains theme button that shifts the background and colors of much of the page.
+Contains a theme button that shifts the background and colors of much of the page.
 
 ##### Home / Title
 Page simply displays my name and some of my roles
