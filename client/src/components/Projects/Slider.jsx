@@ -12,6 +12,7 @@ function Slider({ theme, data }) {
     <div className={`${theme} slider`}>
       {data.map((item, idx) => (
         <Item
+          key={item.name + idx}
           select={() => select(idx)}
           theme={theme}
           item={item}
