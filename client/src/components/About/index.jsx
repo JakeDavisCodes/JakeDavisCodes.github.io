@@ -37,7 +37,7 @@ function About({ theme }) {
   return (
     <div className="page_section big_text" id="about">
       <img
-        src="client/dist/images/me.jpeg"
+        src="client/dist/images/me.png"
         alt="A dazzling photograph of me should be here..."
       />
       <div className="text">
