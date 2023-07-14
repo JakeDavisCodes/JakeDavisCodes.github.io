@@ -14,7 +14,7 @@ function AboutMe({ position, theme }) {
     >
       <div className="left">
         {['Front-End', 'Back-End', 'Testing/Deploy', 'Dev Tools', 'Methodoligies'].map((title, idx) => (
-          <div className={idx === current ? 'current' : null} onClick={() => setCurrent(idx)}>{title + (idx === current ? ' •' : '')}</div>
+          <div key={title} className={idx === current ? 'current' : null} onClick={() => setCurrent(idx)}>{title + (idx === current ? ' •' : '')}</div>
         ))}
       </div>
       <div className="right">
@@ -25,6 +25,7 @@ function AboutMe({ position, theme }) {
           ['Methodoligies', 'Scrum', 'Agile', 'TDD'],
         ].map((list, idx) => (
           <div
+            key={list[0]}
             className="skills"
             style={{
               opacity: `${current === idx ? 1 : 0}`,
@@ -33,7 +34,7 @@ function AboutMe({ position, theme }) {
           >
             <p>{list.shift()}</p>
             {list.map((item) => (
-              <small>
+              <small key={item}>
                 •
                 {' '}
                 {item}

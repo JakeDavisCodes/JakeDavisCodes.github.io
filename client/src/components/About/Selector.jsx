@@ -15,6 +15,7 @@ function Selector({ select, options, current }) {
       <div className="dots">
         {new Array(options).fill(0).map((p, idx) => (
           <i
+            key={`Selector${idx}`}
             onClick={() => select(idx)}
             onMouseEnter={() => onEnter(idx)}
             onMouseLeave={onLeave}
