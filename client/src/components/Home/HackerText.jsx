@@ -26,6 +26,7 @@ const partialDecode = (encoded, decoded) => {
   result = result.slice(0, index) + (decoded[index] || '') + result.slice(index);
   return result;
 };
+
 const sleep = (ms) => new Promise((resolve) => { setTimeout(resolve, ms); });
 
 function HackerText({ textArray, theme }) {
