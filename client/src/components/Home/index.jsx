@@ -18,6 +18,7 @@ function Home({ theme }) {
       <p>Hello,</p>
       <p>My name is Jake</p>
       <HackerText theme={theme} textArray={textArray} />
+
       <div className={`tiny_text section_text ${theme}`}>Home</div>
       <p onClick={() => scrollTo('projects')} className={`lead tiny_text section_text ${theme}`}>Care to see some of my work?</p>
     </div>
